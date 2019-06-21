@@ -1,7 +1,11 @@
 # spring-boot-shiro-2.0
 
 #### 项目介绍
+spring-boot框架，集成shiro权限、redis会话共享、jpa、redis等组件
 基于spring-boot 1.5版本升级到2.0版本，1.0版本地址：https://gitee.com/Freedom_Mr/spring_boot_shiro
+
+####
+搭配前端VUE项目可共同使用，项目地址：https://github.com/Freedom-Mr/vue-element-axios-demo
 
 #### 软件架构
 1. 框架spring-boot 2.0 ，权限框架shiro, 可视化接口调试swagger
