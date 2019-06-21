@@ -1,0 +1,10 @@
+login-config:
+  #用户登陆IP是否保存
+  loginIpSave: true
+  #会话限时
+  sessionTimeout: 120
+  #登陆密码错误处理
+  preventImpact:
+    switch: true
+    number: 5
+    outTime: 10

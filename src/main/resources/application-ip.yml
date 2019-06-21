@@ -1,0 +1,12 @@
+# IP 安全防黑过滤器
+sys-security-ip:
+  # 是否开启IP安全策略
+  ip_filter_open: true
+  # 限制访问时间 （单位：s）
+  limited_time: 3600
+  # 连续访问最高阀值
+  limit_number: 50
+  # 访问最小安全时间段 （单位：s）
+  min_safe_time: 2
+  # 黑名单，多个按分号间隔
+  ip_blacklist:

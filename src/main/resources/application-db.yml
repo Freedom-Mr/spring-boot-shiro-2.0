@@ -1,0 +1,54 @@
+###################Mysql####################
+datasource:
+  sys-user:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/sys_user?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+    testWhileIdle: true
+    validationQuery: select 1
+    timeBetweenEvictionRunsMillis: 1800000
+  common:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/common?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+    testWhileIdle: true
+    validationQuery: select 1
+    timeBetweenEvictionRunsMillis: 1800000
+
+redis:
+  isRedisCache: false
+  database: 4
+  host: 127.0.0.1
+  port: 6378
+  password: root
+  timeout: 30000
+  pool:
+    max-idle: 8
+    min-idle: 0
+    max-active: 8
+    max-wait: -1
+#ElasticSearch client config
+es:
+  IndexCore: 127.0.0.1:61233
+
+#neo4j数据库配置
+#neo4j:
+#  uri: bolt://127.0.0.1:7657
+#  username: neo4j
+#  password:
+
+#cas client config
+cas:
+  sign-out-filters: /logout
+  auth-filters: /*
+  validate-filters: /*
+  request-wrapper-filters: /*
+  assertion-filters: /*
+  cas-server-login-url: http://localhost:9000/login
+  cas-server-url-prefix: http://localhost:9000
+  redirect-after-validation: true
+  use-session: true
+  server-name: http://localhost:8081
+

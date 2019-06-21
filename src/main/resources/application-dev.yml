@@ -1,0 +1,40 @@
+server:
+  port: 61230
+  address: 127.0.0.1
+  servlet:
+    context-path: /spring-boot-shiro
+
+  tomcat:
+    max-http-post-size: -1
+
+#    max-http-header-size: 52428800  #部署开启适当调整Bytes
+#  ssl:
+#    key-store: tomcat.p12
+#    key-store-password: casia
+#    keyStoreType: PKCS12
+#    keyAlias: tomcat
+
+
+session:
+  store-type: redis #设置session存储类型为redis
+
+jackson:
+  serialization:
+    indent_output:  true
+
+jpa:
+  hibernate:
+    ddl-auto: none
+          #设置自动创建数据库
+          #create：先删除，再创建表，以前表的数据清除
+          #update：不删除以前的数据
+          #create-drop：当应用停下来的时候删除
+          #none：默认什么也不做
+          #validate：先验证实体类和表结构是否一致，不一致就会报错
+  show-sql: true
+
+transaction:
+  rollback-on-commit-failure: true
+logging:
+  pattern:
+    level: all
