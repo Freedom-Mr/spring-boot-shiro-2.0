@@ -14,7 +14,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 /**
  * Created by casia.wzy on 2019/2/21
  */
-@ControllerAdvice(basePackages = "casia.isiteam.springbootshiro.controller")
+@ControllerAdvice(basePackages = "casia.isiteam.springbootshiro")
 public class EncodeResponse implements ResponseBodyAdvice {
     private final static Logger logger = LoggerFactory.getLogger(EncodeResponse.class);
 

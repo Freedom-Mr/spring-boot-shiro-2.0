@@ -23,7 +23,7 @@ import java.util.Map;
 /**
  * Created by casia.wzy on 2019/2/22
  */
-@ControllerAdvice(basePackages = "casia.isiteam.springbootshiro.controller")
+@ControllerAdvice(basePackages = "casia.isiteam.springbootshiro")
 public class DecodeRequest implements RequestBodyAdvice {
     private static final Logger logger = LoggerFactory.getLogger(DecodeRequest.class);
 
