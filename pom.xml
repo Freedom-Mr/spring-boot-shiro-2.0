@@ -46,7 +46,7 @@
 		<dependency>
 			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-spring</artifactId>
-			<version>1.4.0</version>
+			<version>1.7.0</version>
 		</dependency>
 		<!-- 在Thymeleaf模板引擎中集成Shiro -->
 		<!--<dependency>
